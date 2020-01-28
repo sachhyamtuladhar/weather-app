@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass public/scss -o public/css",
-    "dev": "concurrently \"npm run scss\" \"nodemon src/app.js -e html,cssnp\""
+    "scss": "node-sass --watch public/scss -o public/css",
+    "dev": "concurrently \"npm run scss\" \"nodemon src/app.js -e html,css\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "hbs": "^4.0.1"
+    "hbs": "^4.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
   }
 }
