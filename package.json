@@ -6,14 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch public/scss -o public/css",
-    "dev": "concurrently \"npm run scss\" \"nodemon src/app.js -e html,css\""
+    "dev": "concurrently \"npm run scss\" \"nodemon src/app.js -e hbs,css,js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "hbs": "^4.1.0"
+    "hbs": "^4.1.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
