@@ -44,3 +44,21 @@ h1 {
 .portrait {
     width: 250px;
 }
+
+input{
+    border: 2px solid #333333;
+    padding: 1rem;
+}
+
+button{
+    cursor: pointer;
+    border: 2px solid #212111;
+    color: #212111;
+    background-color: #aaf;
+    padding: 1rem;
+    &:hover{
+        border: 2px solid #4e4e27;
+        color:  #4e4e27;
+        background-color: rgb(225, 225, 247);
+    }
+}
